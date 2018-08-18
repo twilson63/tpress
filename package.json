@@ -1,7 +1,7 @@
 {
-  "name": "tpress",
+  "name": "ipress",
   "version": "1.0.0",
-  "description": "",
+  "description": "A blog post system that uses markdown and generates a simple html blog post.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,9 +9,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bin": "cli.js",
+  "bin": {
+    "tpress": "cli.js"
+  },
   "dependencies": {
     "ejs": "^2.6.1",
     "marked": "^0.5.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twilson63/tpress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twilson63/tpress/issues"
+  },
+  "homepage": "https://github.com/twilson63/tpress#readme"
 }
