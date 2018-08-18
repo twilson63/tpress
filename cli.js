@@ -7,8 +7,8 @@ var path = require("path");
 const srcFile = process.argv[2];
 
 if (!srcFile) {
-  console.log("No markdown file found");
-  console.log("USAGE: tpress [src.md]");
+  console.log("No markdown file found!");
+  console.log("USAGE: ipress [src.md]");
   process.exit(0);
 }
 

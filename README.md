@@ -15,9 +15,9 @@ I wanted to create a CLI that allows me to publish a blog article either to `dat
 ## Usage
 
 ```
-npm install tpress -g
+npm install ipress -g
 echo '# Hello World' > example.md
-tpress example.md > example.html
+ipress example.md > example.html
 ```
 
 ## Other Tools

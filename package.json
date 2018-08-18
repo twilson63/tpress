@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "tpress": "cli.js"
+    "ipress": "cli.js"
   },
   "dependencies": {
     "ejs": "^2.6.1",
