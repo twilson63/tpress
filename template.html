@@ -5,8 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ipress</title>
+  <title><%= attributes.title %></title>
+  <meta name="description" content="<%= attributes.description %>">
   <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="<%= attributes.title %>">
+  <meta property="og:image" content="<%= attributes.image_url %>">
+  <meta property="og:image:alt" content="<%= attributes.image_alt %>">
+  <meta property="og:description" content="<%= attributes.description %>">
 </head>
 
 <body style="width: 70%;margin: auto">

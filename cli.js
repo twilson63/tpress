@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 var marked = require("marked");
+var fm = require('front-matter');
 var ejs = require("ejs");
 var fs = require("fs");
 var path = require("path");
@@ -14,5 +15,8 @@ if (!srcFile) {
 
 const template = fs.readFileSync(__dirname + "/template.html", "utf-8");
 const md = fs.readFileSync(path.resolve(srcFile), "utf-8");
-const content = marked(md);
-process.stdout.write(ejs.render(template, { content }));
+const page = fm(md)
+
+const page.content = marked(page.body);
+
+process.stdout.write(ejs.render(template, { page }));
