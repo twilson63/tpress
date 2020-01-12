@@ -17,6 +17,8 @@ const template = fs.readFileSync(__dirname + "/template.html", "utf-8");
 const md = fs.readFileSync(path.resolve(srcFile), "utf-8");
 const page = fm(md)
 
-const page.content = marked(page.body);
-
-process.stdout.write(ejs.render(template, { page }));
+page.content = marked(page.body);
+if (!page.attributes.title) {
+  page.attributes.title = srcFile.split('.')[0]
+}
+process.stdout.write(ejs.render(template, page ));
