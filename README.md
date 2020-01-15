@@ -55,15 +55,8 @@ open index.html
 
 When you build your markdown files, you can create a `style.css` file that is configured to be the css file used to style your generated html file. There is a sister project designed to make it easy to add styles to your pages. Check out https://github.com/twilson63/istyle
 
-## Usage
 
-```
-npm install ipress -g
-echo '# Hello World' > example.md
-ipress example.md > example.html
-```
-
-## Other Tools
+### Other Tools
 
 - Spell Checker
 
@@ -83,9 +76,24 @@ npm i write-good -g
 write-good example.md
 ```
 
+### HTML Headers
+
+When creating a post you may want to setup the title of the site, and a description. You can also add open graph resources like an image.
+
+```
+---
+title: My Web Page Title
+description: My description for the web page
+image_url: https://fillmurray.com/300/300
+image_alt: Bill Murray
+---
+```
+
+This html headers adds nice data when users post the links to social media sites.
+
 ## Contributing
 
-All bug fixes are welcome
+PULL Requests welcome
 
 ## Thank you
 

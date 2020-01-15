@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>README</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="README">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+  <meta property="og:description" content="">
+</head>
+
+<body style="width: 70%;margin: auto">
+  <div id="wrapper">
+  <h2 id="ipress">ipress</h2>
+<p>ipress is a command-line interface that focuses on simplicity when creating web pages using markdown and front-matter. You can use it to quickly get a simple post, or you can use it to build a static driven blog or simple web site. </p>
+<blockquote>
+<p>Don&#39;t know what markdown is? Check out <a href="https://daringfireball.net/projects/markdown/">https://daringfireball.net/projects/markdown/</a></p>
+<p>It is a simple text language that focuses on creating content for html pages.</p>
+</blockquote>
+<h3 id="prequesites">Prequesites</h3>
+<ul>
+<li><a href="https://nodejs.org">NodeJS</a></li>
+<li>Text Editor - RECOMMENDED <a href="https://code.visualstudio.com%5B">VSCode</a></li>
+</ul>
+<h3 id="getting-started">Getting Started</h3>
+<p>Install <code>ipress</code></p>
+<pre><code>npm install -g ipress</code></pre><p>Create a simple markdown file called <code>index.md</code></p>
+<pre><code>---
+title: My First Page
+---
+
+# My First Web Page
+
+This is a sample markdown page</code></pre><p>Use <code>ipress</code> to build your html page</p>
+<pre><code>ipress index.md &gt; index.html</code></pre><p>Open in your web browser</p>
+<pre><code>open index.html</code></pre><h3 id="deploying-options">Deploying Options</h3>
+<ul>
+<li><p>[RECOMMENDED] Zeit - zeit.co/now</p>
+</li>
+<li><p>Netlify - <a href="https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git">https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git</a></p>
+</li>
+<li><p>Surge - <a href="https://surge.sh">https://surge.sh</a></p>
+</li>
+</ul>
+<h3 id="styles">Styles</h3>
+<p>When you build your markdown files, you can create a <code>style.css</code> file that is configured to be the css file used to style your generated html file. There is a sister project designed to make it easy to add styles to your pages. Check out <a href="https://github.com/twilson63/istyle">https://github.com/twilson63/istyle</a></p>
+<h3 id="other-tools">Other Tools</h3>
+<ul>
+<li>Spell Checker</li>
+</ul>
+<p>Spell Check your article</p>
+<pre><code>npm i spellchecker-cli -g
+spellchecker --files example.md</code></pre><ul>
+<li>Write Good</li>
+</ul>
+<p>Grammar checking your article</p>
+<pre><code>npm i write-good -g
+write-good example.md</code></pre><h3 id="html-headers">HTML Headers</h3>
+<p>When creating a post you may want to setup the title of the site, and a description. You can also add open graph resources like an image.</p>
+<pre><code>---
+title: My Web Page Title
+description: My description for the web page
+image_url: https://fillmurray.com/300/300
+image_alt: Bill Murray
+---</code></pre><p>This html headers adds nice data when users post the links to social media sites.</p>
+<h2 id="contributing">Contributing</h2>
+<p>PULL Requests welcome</p>
+<h2 id="thank-you">Thank you</h2>
+<ul>
+<li>JavaScript Community</li>
+<li>NodeJS Community</li>
+<li>marked Creators and Contributors</li>
+<li>ejs Creators and Contributors</li>
+</ul>
+
+  </div> 
+</body>
+
+</html>
