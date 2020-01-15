@@ -1,3 +1,8 @@
+---
+title: ipress - markdown to web page
+description: create web pages using markdown
+---
+
 ## ipress
 
 ipress is a command-line interface that focuses on simplicity when creating web pages using markdown and front-matter. You can use it to quickly get a simple post, or you can use it to build a static driven blog or simple web site. 
