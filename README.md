@@ -1,16 +1,59 @@
-# ipress
+## ipress
 
-Convert Markdown Files to full HTML pages, this utility wraps your HTML generated markdown with a full HTML page with title, link to a style.css page and a div that wraps your markdown generated HTML with a wrapper id.
+ipress is a command-line interface that focuses on simplicity when creating web pages using markdown and front-matter. You can use it to quickly get a simple post, or you can use it to build a static driven blog or simple web site. 
 
-## Styles
+> Don't know what markdown is? Check out https://daringfireball.net/projects/markdown/
+>
+> It is a simple text language that focuses on creating content for html pages.
 
-You can copy any of the styles from http://markedstyle.com/styles to style your markdown, or you can create your own styles by creating your own style.css file.
+### Prequesites
 
-## Why
+* [NodeJS](https://nodejs.org)
+* Text Editor - RECOMMENDED [VSCode](https://code.visualstudio.com[)
 
-I wanted to create a CLI that allows me to publish a blog article either to `dat` or `now`.
+### Getting Started
 
-> I while back there was a blogger who shared an idea of creating a different color scheme per article, and I liked that, so this is my attempt to make it a simple process.
+Install `ipress`
+
+```
+npm install -g ipress
+```
+
+Create a simple markdown file called `index.md`
+
+```
+---
+title: My First Page
+---
+
+# My First Web Page
+
+This is a sample markdown page
+```
+
+Use `ipress` to build your html page
+
+```
+ipress index.md > index.html
+```
+
+Open in your web browser
+
+```
+open index.html
+```
+
+### Deploying Options
+
+* [RECOMMENDED] Zeit - zeit.co/now
+
+* Netlify - https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git
+
+* Surge - https://surge.sh
+
+### Styles
+
+When you build your markdown files, you can create a `style.css` file that is configured to be the css file used to style your generated html file. There is a sister project designed to make it easy to add styles to your pages. Check out https://github.com/twilson63/istyle
 
 ## Usage
 
@@ -38,15 +81,6 @@ Grammar checking your article
 ```
 npm i write-good -g
 write-good example.md
-```
-
-- Dat Archive
-
-Ship article to the P2P Web
-
-```
-npm i dat -g
-dat share .
 ```
 
 ## Contributing
