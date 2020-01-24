@@ -1,24 +1,22 @@
 #!/usr/bin/env node
-var marked = require("marked");
-var fm = require('front-matter');
-var ejs = require("ejs");
+var ipress = require('./index.js')
+
 var fs = require("fs");
 var path = require("path");
 
 const srcFile = process.argv[2];
 
 if (!srcFile) {
+  console.log("");
+  console.log("ipress");
+  console.log("----------------------");
   console.log("No markdown file found!");
   console.log("USAGE: ipress [src.md]");
+  console.log("");
   process.exit(0);
 }
 
-const template = fs.readFileSync(__dirname + "/template.html", "utf-8");
 const md = fs.readFileSync(path.resolve(srcFile), "utf-8");
-const page = fm(md)
+const name = srcFile.split('.')[0]
 
-page.content = marked(page.body);
-if (!page.attributes.title) {
-  page.attributes.title = srcFile.split('.')[0]
-}
-process.stdout.write(ejs.render(template, page ));
+process.stdout.write(ipress(name, md));

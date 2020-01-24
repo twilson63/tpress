@@ -2,9 +2,9 @@
   "name": "ipress",
   "version": "1.2.0",
   "description": "A blog post system that uses markdown and generates a simple html blog post.",
-  "main": "cli.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test/index_test.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,10 @@
     "front-matter": "^3.0.2",
     "marked": "^0.7.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "is-html": "^2.0.0",
+    "tape": "^4.13.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/twilson63/tpress.git"
