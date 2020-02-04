@@ -34,7 +34,9 @@ module.exports = (name='ipress', md='') => {
   const template = fs.readFileSync(__dirname + "/template.html", "utf-8");
   
   const page = fm(md)
-  
+  // allow access to attributes from markdown
+  page.body = ejs.render(page.body, page.attributes)
+  // convert markdown into html
   page.content = marked(page.body);
   if (!page.attributes.title) {
     page.attributes.title = name 
