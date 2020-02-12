@@ -23,3 +23,9 @@ parameter: Its raining tacos
   t.end()
 })
 
+test('test with no front matter', t => {
+  const html = ipress('hello', `# Hello World`)
+  t.ok(isHtml(html))
+  t.end()
+})
+
