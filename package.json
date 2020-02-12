@@ -1,6 +1,6 @@
 {
   "name": "ipress",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A blog post system that uses markdown and generates a simple html blog post.",
   "main": "index.js",
   "scripts": {
