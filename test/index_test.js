@@ -29,3 +29,17 @@ test('test with no front matter', t => {
   t.end()
 })
 
+test('style param', t => {
+  const html = ipress('foo', `---
+title: FooBar
+css: foo.css
+---
+
+# I like style
+
+`)
+  console.log(html)
+  t.ok(isHtml(html))
+  t.end()
+})
+
