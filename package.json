@@ -4,7 +4,7 @@
   "description": "A blog post system that uses markdown and generates a simple html blog post.",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/index_test.js"
+    "test": "tape test/*_test.js"
   },
   "keywords": [],
   "author": "",

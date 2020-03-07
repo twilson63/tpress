@@ -13,9 +13,11 @@
   <meta property="og:image" content="<%= attributes.image_url %>">
   <meta property="og:image:alt" content="<%= attributes.image_alt %>">
   <meta property="og:description" content="<%= attributes.description %>">
+  <% (attributes.scripts || []).map(s => { %>
+  <script defer src="<%= s %>"><script><% }) %>
 </head>
 
-<body style="width: 70%;margin: auto">
+<body>
   <div id="wrapper">
   <%- content %>
   </div> 
