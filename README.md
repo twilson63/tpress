@@ -5,6 +5,8 @@ description: create web pages using markdown
 
 ## ipress
 
+[![Build Status](https://ci.twilson63.sh/buildStatus/icon?job=ipress%2Fmaster)](https://ci.twilson63.sh/job/ipress/job/master/)
+
 ipress is a command-line interface that focuses on simplicity when creating web pages using markdown and front-matter. You can use it to quickly get a simple post, or you can use it to build a static driven blog or simple web site. 
 
 > Don't know what markdown is? Check out https://daringfireball.net/projects/markdown/
