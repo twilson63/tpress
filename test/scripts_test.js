@@ -10,7 +10,7 @@ const answer = `<!DOCTYPE html>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>foo</title>
   <meta name="description" content="">
-  <link rel="icon" type="image/png" href="https://placehold.it/32/32">
+  <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
   <link rel="stylesheet" href="/style.css">
   <meta property="og:title" content="foo">
   <meta property="og:image" content="">
