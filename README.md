@@ -50,26 +50,6 @@ Open in your web browser
 open index.html
 ```
 
-### Advanced Options
-
-Using frontmatter to define the html headers can add better discovery to your web page, but you may want to leverage front matter to create a web page template that can render data from frontmatter.
-
-```
----
-title: My Title
-custom_data: An example of custom data
----
-
-# <%= title %>
-
-<%= custom_data %>
-```
-
-In this example, using the delimiters `<%=` `%>` you can access your 
-frontmatter attributes within the markdown document. ipress will replace
-those attributes with the correct values.
-
-
 
 ### Deploying Options
 
