@@ -6,6 +6,11 @@ const {
 
 const loadTemplate = require('./load-template')
 
+
+/**
+ * take a markdown document and 
+ * turn it into a solid HTML document
+ */
 module.exports = (name='ipress', md='') => 
   Either.of(article(name, md))
     .chain(validateName)
@@ -15,5 +20,10 @@ module.exports = (name='ipress', md='') =>
     .map(renderBody)
     .map(createContentHTML)
     .map(setTitle)
-    .either(e => console.log(e.message), applyTemplate)
+    .either(handleError, applyTemplate)
 
+
+function handleError(e) {
+  console.log(e.message)
+  return `<h1>${e.message}</h1>`
+}
