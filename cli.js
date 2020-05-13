@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var ipress = require('./index.js')
+var ipress = require('./src')
 
 var fs = require("fs");
 var path = require("path");
