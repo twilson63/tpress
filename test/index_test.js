@@ -1,6 +1,6 @@
 const test = require('tape')
 const isHtml = require('is-html')
-const ipress = require('../')
+const ipress = require('../src')
 
 test('convert markdown to html', t => {
   const html = ipress('walrus', `---
@@ -18,7 +18,6 @@ parameter: Its raining tacos
 ![<%= image_alt %>](<%= image_url %>)
 
 `)
-  console.log(html)
   t.ok(isHtml(html))
   t.end()
 })
@@ -38,7 +37,6 @@ css: foo.css
 # I like style
 
 `)
-  console.log(html)
   t.ok(isHtml(html))
   t.end()
 })

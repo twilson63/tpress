@@ -21,7 +21,8 @@
   },
   "devDependencies": {
     "is-html": "^2.0.0",
-    "tape": "^4.13.0"
+    "tape": "^4.13.0",
+    "rewire": "^5.0.0"
   },
   "repository": {
     "type": "git",
