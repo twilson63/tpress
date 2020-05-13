@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var ipress = require('./src')
 
 var fs = require("fs");

@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "ipress": "node cli.js"
+    "ipress": "cli.js"
   },
   "dependencies": {
     "crocks": "^0.12.4",
