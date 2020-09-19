@@ -8,13 +8,25 @@
   <title><%= attributes.title %></title>
   <meta name="description" content="<%= attributes.description %>">
   <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
-  <link rel="stylesheet" href="<%= attributes.css || '/style.css' %>">
+  <% if (attributes.css) { %>
+    <% (attributes.css.split(' ')).map(css => { %>
+    <link rel="stylesheet" href="<%= css %>">
+    <% }) %>
+    <% } else { %>
+  <link rel="stylesheet" href="/style.css">
+  <% } %>
   <meta property="og:title" content="<%= attributes.title %>">
   <meta property="og:image" content="<%= attributes.image_url %>">
   <meta property="og:image:alt" content="<%= attributes.image_alt %>">
   <meta property="og:description" content="<%= attributes.description %>">
   <% (attributes.scripts || []).map(s => { %>
   <script defer src="<%= s %>"><script><% }) %>
+  <% if (attributes.code) { %>
+  <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/styles/agate.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/highlight.min.js"></script>     
+  <script>hljs.initHighlightingOnLoad();</script>  
+  <% } %>
 </head>
 
 <body>
