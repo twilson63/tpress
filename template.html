@@ -19,6 +19,14 @@
   <meta property="og:image" content="<%= attributes.image_url %>">
   <meta property="og:image:alt" content="<%= attributes.image_alt %>">
   <meta property="og:description" content="<%= attributes.description %>">
+
+  <meta propery="twitter:card" content="summary_large_image">
+  
+  <meta propery="twitter:url" content="<%= attributes.url %>">
+  <meta propery="twitter:title" content="<%= attributes.title %>">
+  <meta propery="twitter:description" content="<%= attributes.description %>">
+  <meta propery="twitter:image" content="<%= attributes.image_url %>">
+
   <% (attributes.scripts || []).map(s => { %>
   <script defer src="<%= s %>"><script><% }) %>
   <% if (attributes.code) { %>
